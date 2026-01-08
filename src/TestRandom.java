@@ -9,7 +9,7 @@ public class TestRandom {
 
         // สุ่มตัวเลขระหว่าง 50 ถึง 59
         for (int i = 0; i < T.length; i++) {
-            T[i] = rand.nextInt(10) + 50; // สุ่ม 0-9 แล้วบวก 50
+            T[i] = (int)(50+Math.random()*9); // สุ่ม 0-9 แล้วบวก 50
         }
 
         // แสดงค่าและหาผลรวม
