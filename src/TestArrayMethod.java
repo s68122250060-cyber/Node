@@ -6,7 +6,7 @@ public class TestArrayMethod {
         printArray(t);
         int sum = sumArray(t);
         System.out.println("sum = "+sum);
-        
+
     }
     public static void randomArray(int [] x) {
         for (int i = 0; i < x.length; i++) {
@@ -17,7 +17,7 @@ public class TestArrayMethod {
         for (int i : x) {
             System.out.print(i +" ");
         }
-        System.out.println();
+        System.out.println();   
     }
     public static int sumArray(int [] x) {
         int sum = 0;
@@ -25,5 +25,14 @@ public class TestArrayMethod {
             sum = sum+x[i];
         }
         return sum;
+    }
+    public static int minArray(int[] x) {
+        int min = x[0];
+        for (int i = 1; i < x.length; i++) {
+            if (x[i] < min) {
+                min = x[i];
+            }
+        }
+        return min;
     }
 }
